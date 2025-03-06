@@ -8,9 +8,9 @@ function NavBar() {
         </div>
         <div className="navbar-links">
             <Link to="/" className="nav-link">Home</Link>
-            <Link to="/fav" className="nav-link">Fav</Link>
+            <Link to="/favorites" className="nav-link">Favorites</Link>
         </div>
     </nav>
 }
 
-export default NavBar;
+export default NavBar
