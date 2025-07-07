@@ -30,6 +30,12 @@ export const MovieProvider = ({children}) => {
 
     const removeFromFavorites = (movieId) => {
         setFavorites(prev => prev.filter(movie => movie.id !== movieId))
+        // Clear the rating when removing from favorites
+        setRatings(prev => {
+            const newRatings = { ...prev }
+            delete newRatings[movieId]
+            return newRatings
+        })
     }
     
     const isFavorite = (movieId) => {
