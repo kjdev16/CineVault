@@ -21,6 +21,7 @@
 
 html, body {
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -28,6 +29,7 @@ body {
   width: 100%;
   min-height: 100vh;
   position: relative;
+  padding-top: 0;
 }
 
 #root {
